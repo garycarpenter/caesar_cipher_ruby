@@ -3,7 +3,7 @@
 # function takes a string and a shift factor and returns rotated string
 
 # TODO make z loop to a and Z loop to A
-# TODO ignore spaces and punctionation mark
+# DONE ignore spaces and punctionation mark
 
 def caesar_cipher(string_to_shift, shift_factor)
     p string_to_shift
