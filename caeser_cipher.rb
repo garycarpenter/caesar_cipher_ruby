@@ -10,8 +10,12 @@ def caesar_cipher(string_to_shift, shift_factor)
     p shift_factor
     shifted_string = ""
     string_to_shift.each_char do | char |
-        char = char.ord + shift_factor
-        shifted_string << char
+        if ("a"..."z").include?(char) || ("A"..."Z").include?(char)
+            char = char.ord + shift_factor
+            shifted_string << char
+        else
+            shifted_string << char
+        end
     end
     p shifted_string
 end
